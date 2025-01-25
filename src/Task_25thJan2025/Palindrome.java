@@ -7,7 +7,7 @@ public class Palindrome {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the word");
         String word = sc.nextLine();
-        int wordlength = word.length()-1;
+        int wordlength = word.length()-1; //.length gives the number of characters present in the string. but we start count from 0 not 1 when stored so we updated the step as "length()-1"
         String reversed_word = "";
         for(int i = wordlength; i>=0; i--)
         {
